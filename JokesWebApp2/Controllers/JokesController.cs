@@ -25,6 +25,12 @@ namespace JokesWebApp2.Controllers
         {
             return View();
         }
+        // Post: Jokes/ShowSearchResults 
+        public string ShowSearchResults(string SearchPhrase)
+        {
+            return "You entered " + SearchPhrase;
+        }
+
 
 
         // GET: Jokes/Details/5

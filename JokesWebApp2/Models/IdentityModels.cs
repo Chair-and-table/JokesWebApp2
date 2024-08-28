@@ -29,5 +29,7 @@ namespace JokesWebApp2.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<JokesWebApp2.Models.Joke> Jokes { get; set; }
     }
 }

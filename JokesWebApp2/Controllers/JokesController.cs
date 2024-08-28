@@ -26,9 +26,9 @@ namespace JokesWebApp2.Controllers
             return View();
         }
         // Post: Jokes/ShowSearchResults 
-        public string ShowSearchResults(string SearchPhrase)
+        public async Task<ActionResult> ShowSearchResults(string SearchPhrase)
         {
-            return "You entered " + SearchPhrase;
+            return View("Index", await db.Jokes.Where(j => j.JokeQuestion.Contains(SearchPhrase)).ToListAsync());
         }
 
 

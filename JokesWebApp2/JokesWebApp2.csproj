@@ -260,6 +260,7 @@
     <Content Include="Views\Jokes\Details.cshtml" />
     <Content Include="Views\Jokes\Edit.cshtml" />
     <Content Include="Views\Jokes\Index.cshtml" />
+    <Content Include="Views\Jokes\ShowSearchForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

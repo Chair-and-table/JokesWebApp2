@@ -20,6 +20,12 @@ namespace JokesWebApp2.Controllers
         {
             return View(await db.Jokes.ToListAsync());
         }
+        // Get : Jokes/ShowSearchForm
+        public async Task<ActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
 
         // GET: Jokes/Details/5
         public async Task<ActionResult> Details(int? id)
